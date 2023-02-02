@@ -1,0 +1,13 @@
+.search{
+    background: url('https://gcdn.lanetaneta.com/wp-content/uploads/2021/09/Mejores-programas-como-Rick-Morty-en-Netflix.jpg');
+    min-height: 93vh;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.search__container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    margin-top: 5rem;
+    gap: 5rem;
+}
