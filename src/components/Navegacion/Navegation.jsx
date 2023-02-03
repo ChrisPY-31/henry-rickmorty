@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { getNavigate } from "../../store/reducer/characters/character";
+import { getConfigure, getNavigate } from "../../store/reducer/characters/character";
 import "./Navegacion.css";
 import { Cerrar } from "../Cerrar/Cerrar";
 const Navegation = () => {
@@ -39,24 +39,17 @@ const Navegation = () => {
             </Link>
           </li>
           <li className="nav__li">
-            <Link className="nav__link" to={"/ramdon"}>
-              Ramdon
-            </Link>
-          </li>
-          <li className="nav__li">
             <Link className="nav__link" to={"/search"}>
-              Buscar Personajes
+              Search Characters 
             </Link>
           </li>
           <li className="nav__li">
             <Link className="nav__link" to={"/favorites"}>
-              Favorites
+              Favorits
             </Link>
           </li>
-          <li className="nav__li">
-            <Link className="nav__link" to={"/createPerson"}>
-              CreatePerson
-            </Link>
+          <li className="nav__li nav__link" onClick={()=>dispatch(getConfigure())}>
+            More Configure
           </li>
         </ul>
         {cerrar && <Cerrar />}
@@ -69,7 +62,7 @@ const Navegation = () => {
           />
           {image && (
             <div className="nav__menu ">
-              <p className="nav__configure only">Configuracion</p>
+              <p className="nav__configure only" onClick={()=>navigate('/about')}>Cuenta</p>
               <p className="nav__sesion only" onClick={handleCerrar}>
                 Cerrar sesion
               </p>

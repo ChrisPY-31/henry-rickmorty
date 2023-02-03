@@ -8,7 +8,7 @@ const Character = ({ chara ,handleDelete}) => {
   return (
     <div className="character">
       <div className="character__cerrar text-center" onClick={()=>handleDelete(id)}>X</div>
-      <div className="card">
+      <div className="card ">
         <img src={image} alt="" className="card-image" />
         <div className="card-body">
           <h4 className="card-title">{name}</h4>

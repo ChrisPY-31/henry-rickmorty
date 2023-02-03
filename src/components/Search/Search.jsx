@@ -35,8 +35,9 @@ const Search = () => {
           type="text"
           onChange={(e) => setInput(e.target.value)}
           className="search__input"
+          autoFocus
         />
-        <button className="btn btn-primary">Enviar</button>
+        <button className="btn btn-outline-primary">Enviar</button>
       </form>
       {characters.length === 0 ? (
         <Person />

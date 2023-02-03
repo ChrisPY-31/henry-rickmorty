@@ -8,11 +8,13 @@ import { AddFavorites } from "../addFavorites/addFavorites";
 import { getDetail } from "../../store/reducer/characters/character";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { MoreConfi } from "../moreConfigure/MoreConfi";
 const Home = () => {
   const {id} = useParams
   const navigate = useNavigate()
   const dispatch = useDispatch();
-  const { characters } = useSelector((state) => state.character);
+  const { characters , moreConfigure} = useSelector((state) => state.character);
+  console.log(moreConfigure)
   const [page, setPage] = useState(1);
   const [isFav, setIsfav] = useState(false);
 
@@ -39,8 +41,11 @@ const Home = () => {
   }
   return (
     <div className="home">
-      {isFav&& <AddFavorites/>}
+      <h1 className="home__h1">Characters page</h1>
       <Pagination page={page} setPage={setPage} />
+
+      {moreConfigure&& <MoreConfi/>}
+      {isFav&& <AddFavorites/>}
       <div className="home__grid">
         {characters.map((chara) => (
           <div className="home__character" key={chara.id}>

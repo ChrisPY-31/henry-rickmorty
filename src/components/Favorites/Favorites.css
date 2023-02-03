@@ -1,5 +1,11 @@
 .favorites{
+    background:url('https://wallpapercave.com/wp/wp6631294.jpg');
+    height: 91.5vh;
+    margin: 0;
+}
+.favorites__container{
     position: relative;
+
 }
 
 .favorites__cerrar{

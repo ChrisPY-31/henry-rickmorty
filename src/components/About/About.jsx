@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import './About.css'
 
 const About = () => {
+ 
   return (
-    <div>Proximamente</div>
+    <div className='about'>
+      <h1 className='text-center text-white py-5'>Proximamente solo en Henry</h1>
+    </div>
   )
 }
 

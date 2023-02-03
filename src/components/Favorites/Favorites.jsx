@@ -1,18 +1,26 @@
 import React from "react";
 import { useSelector , useDispatch} from "react-redux";
-import { getDelete } from "../../store/reducer/characters/character";
+import { getCharaDelete, getDelete, getFavoCharacters } from "../../store/reducer/characters/character";
+import { DeleFavo } from "../DeleteFavo/DeleFavo";
 import { Person } from "../VacioPerson/Person";
 import './Favorites.css'
 const Favorites = () => {
   const dispath = useDispatch()
-  const { favorites } = useSelector((state) => state.character);
+  const { favorites ,charaDelete } = useSelector((state) => state.character);
+
   console.log(favorites);
+  const handleDelete = (favo)=>{
+    dispath(getFavoCharacters(favo))
+    dispath(getCharaDelete())
+  }
+  // ()=>dispath(getDelete(favo.id))
   return (
-    <div className="container ">
-      <div className="row mt-5">
+    <div className="favorites">
+      {charaDelete && <DeleFavo/>}
+      <div className="row ">
         {favorites.length === 0?<Person/>:favorites.map((favo) => (
-          <div className="col-3 favorites mx-5" key={favo.id}>
-            <div className="favorites__cerrar" onClick={()=>dispath(getDelete(favo.id))}>X</div>
+          <div className="col-3 favorites__container mx-5" key={favo.id}>
+            <div className="favorites__cerrar" onClick={()=>handleDelete(favo)}>X</div>
             <div className="card">
               <img src={favo.image} alt="" className="card-image" />
               <div className="card-body">

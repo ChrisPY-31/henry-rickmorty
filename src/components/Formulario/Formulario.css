@@ -39,7 +39,7 @@
   width: 100%;
   font-size: 3rem;
   margin-bottom: 10px;
-  color: black;
+  color: white ;
   font-weight: 900;
 }
 .form__email {
@@ -57,7 +57,14 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2rem;
+  border: none;
   margin-top: 2rem;
   border-radius: 1rem;
   cursor: pointer;
+  color: white;
+  background-color: transparent;
+}
+.form__boton:hover{
+  background-color:rgba(8, 243, 0, 0.7);
+
 }

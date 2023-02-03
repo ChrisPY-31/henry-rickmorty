@@ -7,6 +7,14 @@
     background-position: center center;
     
 }
+.home__h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2rem;        
+}
 .home__grid{
     width: 90%;
     margin: 2rem auto;
