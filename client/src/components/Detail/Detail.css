@@ -1,0 +1,46 @@
+.detail{
+    background-image: url('https://i.pinimg.com/originals/3a/2c/76/3a2c7620d168f1faff4e861c4029e84f.jpg');
+    height: 92vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    display: flex;
+    align-items: center;
+}
+.detail__container{
+    min-width: 80%;
+    margin: 0rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 60%;
+    border-radius: 1rem;
+    background-color:#1b1b32;
+    opacity: .8;
+    box-shadow: 5px 5px 15px 15px black; 
+    
+}
+.detail__image{
+    width: 45rem;
+    height: 50rem;
+    border-radius: 10px;
+    
+}
+.detail__image:hover {
+    cursor: pointer;
+    transform:scale(1.1);transform:scale(1.1);
+    transition-duration: .4s;
+  }
+.detail__page1{
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+}
+.detail__page2{
+    width: 50rem;
+
+}
+.detail__text{
+    padding: 5px 0;
+}

@@ -1,0 +1,27 @@
+.favorites{
+    background:url('https://wallpapercave.com/wp/wp6631294.jpg');
+    height: 91.5vh;
+    margin: 0;
+}
+.favorites__container{
+    position: relative;
+
+}
+
+.favorites__cerrar{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    width: 5rem;
+    color: white;
+    position: absolute;
+    z-index: 10;
+    border-radius: 1rem;
+    right: -10px;
+    top: -10px;
+    cursor: pointer;
+}

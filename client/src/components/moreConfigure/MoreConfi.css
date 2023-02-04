@@ -1,0 +1,54 @@
+.more{
+    height: 5rem;
+    margin-top: 2rem;
+}
+.more__container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.more__form{
+    display: flex;
+}
+.more__select{
+    padding: 8px 3px;
+    width: 30rem;
+    font-size: 2rem;
+    border: none;
+}
+.more__input{
+    padding: 10px 3px;
+    width: 30rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size:2rem;
+    border-bottom: 2px solid #fff;
+}
+.more__input::placeholder{
+    color: white;
+    font-size: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    
+}
+.more__boton{
+    padding: 5px 3px ;
+    width: 13rem;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 2rem;
+    color: #00f;
+    background: transparent;
+}
+.more__boton:hover{
+    background-color: #00f;
+    color: white;
+}

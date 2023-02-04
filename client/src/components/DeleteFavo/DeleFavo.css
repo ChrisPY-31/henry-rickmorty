@@ -1,0 +1,74 @@
+.deleFavo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    margin: 0 auto;
+}
+.deleFavo__container{
+    width: 40rem;
+    height: 40rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+.delefavo__res{
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.delefavo__h2{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.delefavo__parafo{
+    font-size: 1.6rem;
+
+}
+.delefavo__img{
+    height: 8.5rem;
+    width: 8.5rem;
+    border-radius: 100%;
+}
+.delefavo__name{
+    font-size: 2rem;
+    font-family: bold;
+}
+.delefavo__objeto{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+}
+.deleFavo__desicion{
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleFavo__cancelar{
+    font-size: 2rem;
+    background-color: transparent;
+    color: #00f;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.deleFavo__eliminar{
+    font-size: 2rem;
+    background-color: #00f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
